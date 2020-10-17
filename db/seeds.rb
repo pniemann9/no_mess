@@ -627,8 +627,8 @@ ingredients = [
 
 ingredients.each do |data|
   file = URI.open(data[:image])
-  ingredient = Ingredient.new(name: data[:name], category: data[:category], unit: data[:unit])
-  ingredient.photo.attach(io: file, filename: "#{ingredient.name}.png", content_type: 'image/png')
+  ingredient = Ingredient.new(name: data[:name], category: data[:category], image: data[:image], unit: data[:unit])
+  # ingredient.photo.attach(io: file, filename: "#{ingredient.name}.png", content_type: 'image/png')
   # if ingredient.photo.attached?
     ingredient.save!
   # else

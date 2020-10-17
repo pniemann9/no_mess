@@ -56,7 +56,8 @@
 
               <div class="card-ingredient-show">
                 <% if ingre %>
-                  <%= image_tag ingre.photo %>
+                  <%#= image_tag ingre.photo %>
+                  <%= image_tag ingre.image %>
                 <% else %>
                   <img src="https://res.cloudinary.com/kupopilika/image/upload/v1590574543/No%20Mess/harvest_jlu7ek.png" />
                 <% end %>
