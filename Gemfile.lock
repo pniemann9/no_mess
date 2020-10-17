@@ -264,7 +264,7 @@ DEPENDENCIES
   font-awesome-sass
   jbuilder (~> 2.7)
   listen (~> 3.2)
-  pg (>= 0.18, < 2.0)
+  pg (~> 1.2, >= 1.2.3)
   pry-byebug
   pry-rails
   puma (~> 4.1)
